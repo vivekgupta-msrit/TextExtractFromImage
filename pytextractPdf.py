@@ -1,12 +1,10 @@
 import io
 from PIL import Image
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\Tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = '.\Tesseract-OCR\Tesseract.exe'
 from wand.image import Image as wi
 
-#pdf = wi(filename = "Test4.pdf", resolution = 3000)
-pdfImg = wi(filename = "acko.png", resolution = 300 )
-#pdfImg = pdf.convert('jpeg')
+pdfImg = wi(filename = "images.png", resolution = 300 )
 
 imgBlobs = []
 
